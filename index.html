@@ -24,13 +24,22 @@
         <a href="https://instagram.com/leandrocarlos" target="_blank" class="py-2 px-4 bg-white text-indigo-600 rounded-xl hover:bg-indigo-100 transition">Instagram</a>
       </div>
 
-      <form name="contato" method="POST" data-netlify="true" class="text-left space-y-4">
+      <form action="https://formsubmit.co/leonpcsn@gmail.com" method="POST" class="text-left space-y-4">
         <h2 class="text-lg font-semibold text-white text-center">Fale comigo</h2>
+      
+        <!-- Proteção contra SPAM -->
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nova mensagem do site de Leandro Carlos">
+      
+        <!-- Campos -->
         <input type="text" name="nome" placeholder="Seu nome" required class="w-full px-4 py-2 rounded-xl text-gray-900" />
         <input type="email" name="email" placeholder="Seu e-mail" required class="w-full px-4 py-2 rounded-xl text-gray-900" />
         <textarea name="mensagem" placeholder="Sua mensagem" required class="w-full px-4 py-2 rounded-xl text-gray-900"></textarea>
+      
         <button type="submit" class="w-full py-2 bg-white text-indigo-600 rounded-xl hover:bg-indigo-100 transition">Enviar</button>
       </form>
+      
 
       <p class="text-xs mt-6 text-white/60">Publicado em:
         <a href="https://681d618eff7cb3fab478419c--clinquant-marigold-230a42.netlify.app/" target="_blank" class="underline">Netlify</a>
